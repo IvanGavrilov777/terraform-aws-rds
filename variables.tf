@@ -1,5 +1,7 @@
 variable "db_name" {
+ type = list (string)
   description = "Unique name to assign to RDS instance"
+default = ["one","two","three"]
 }
 
 variable "db_username" {
